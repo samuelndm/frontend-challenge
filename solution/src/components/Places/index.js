@@ -20,10 +20,11 @@ const Places = () => {
 
   return (
     <Container>
-      {places.length &&
-        places.map((place) => (
-          <Place place={place} key={`place-${place.id}`} />
-        ))}
+      {places.length
+        ? places.map((place) => (
+            <Place place={place} key={`place-${place.id}`} />
+          ))
+        : null}
     </Container>
   );
 };
