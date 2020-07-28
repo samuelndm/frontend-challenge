@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styled";
-import NoPicture from "../../../assets/images/no-picture.jpg";
+import NoPicture from "../../assets/images/no-picture.jpg";
 
 import Picture from "./Picture";
 import Info from "./Info";

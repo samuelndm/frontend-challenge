@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Container, Form, Label, Input, Button } from "./styled";
 import { pascalToSnakeCase } from "../../utils/utils";
-import Place from "../Places/Place";
+import Place from "../Place";
 
 const PlaceForm = ({ place, submit = () => {} }) => {
   const history = useHistory();

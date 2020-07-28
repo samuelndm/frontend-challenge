@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "./styled";
 import { fetchPlaces } from "../../services/places";
-import Place from "./Place";
+import Place from "../Place";
 
 const Places = () => {
   const [places, setPlaces] = useState([]);
