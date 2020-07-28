@@ -10,10 +10,9 @@ const Places = () => {
     const loadData = async () => {
       try {
         const { data } = await fetchPlaces();
-        console.log("data", data);
         setPlaces(data.places || []);
-      } catch (e) {
-        console.error(e);
+      } catch (err) {
+        console.error(err);
       }
     };
     loadData();
