@@ -1,17 +1,17 @@
 import React from "react";
 import { Container } from "../styledPage";
 import Navbar from "../../components/Navbar";
-import Places from "../../components/Places";
+import PlaceCreate from "../../components/PlaceCreate";
 
-const Home = () => {
+const Create = () => {
   return (
     <>
       <Navbar />
       <Container>
-        <Places />
+        <PlaceCreate />
       </Container>
     </>
   );
 };
 
-export default Home;
+export default Create;

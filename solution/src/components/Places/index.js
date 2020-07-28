@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PlacesContainer } from "./styled";
+import { Container } from "./styled";
 import { fetchPlaces } from "../../services/places";
 import Place from "./Place";
 
@@ -20,12 +20,12 @@ const Places = () => {
   }, []);
 
   return (
-    <PlacesContainer>
+    <Container>
       {places.length &&
         places.map((place) => (
           <Place place={place} key={`place-${place.id}`} />
         ))}
-    </PlacesContainer>
+    </Container>
   );
 };
 

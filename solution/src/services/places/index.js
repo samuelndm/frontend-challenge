@@ -7,3 +7,22 @@ export const fetchPlaces = (params = {}) => {
     },
   });
 };
+
+export const fetchPlacesBySlug = (slug = "") => {
+  return api.get(`/places/${slug}`);
+};
+
+export const createPlaces = (body = {}) => {
+  return api.post("/places/new", {
+    ...body,
+  });
+};
+
+export const updatePlaces = (id, body = {}) => {
+  return api.put("/places/edit", {
+    id,
+    fields: {
+      ...body,
+    },
+  });
+};

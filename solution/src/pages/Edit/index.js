@@ -1,17 +1,18 @@
 import React from "react";
 import { Container } from "../styledPage";
 import Navbar from "../../components/Navbar";
-import Places from "../../components/Places";
+import PlaceEdit from "../../components/PlaceEdit";
 
-const Home = () => {
+const Edit = ({ match, ...props }) => {
+  const slug = match.params.slug || "";
   return (
     <>
       <Navbar />
       <Container>
-        <Places />
+        <PlaceEdit slug={slug} />
       </Container>
     </>
   );
 };
 
-export default Home;
+export default Edit;

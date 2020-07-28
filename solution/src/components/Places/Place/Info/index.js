@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Name, State, City } from "./styled";
 
-const Info = ({ name, state, city }) => {
+const Info = ({ name, city, state }) => {
   return (
     <Container>
-      <Name>Nome: {name}</Name>
-      <State>Estado: {state}</State>
+      <Name>{name}</Name>
       <City>Cidade: {city}</City>
+      <State>Estado: {state}</State>
     </Container>
   );
 };

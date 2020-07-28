@@ -1,16 +1,13 @@
 import React from "react";
-import { NavbarContainer } from "./styled";
-
-import NavbarLink from "./NavbarLink";
+import { Container } from "./styled";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
-      <NavbarLink title="Criar" />
-      <NavbarLink title="Listar" />
-      <NavbarLink title="Editar" />
-      <NavbarLink title="Deletar" />
-    </NavbarContainer>
+    <Container>
+      <Link to={"/"}>Listar</Link>
+      <Link to={"/create"}>Criar</Link>
+    </Container>
   );
 };
 
