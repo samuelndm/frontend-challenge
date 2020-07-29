@@ -12,6 +12,10 @@ export const fetchPlacesBySlug = (slug = "") => {
   return api.get(`/places/${slug}`);
 };
 
+export const fetchPlacesByName = (name = "") => {
+  return api.get(`/places/search/${name}`);
+};
+
 export const createPlaces = (body = {}) => {
   return api.post("/places/new", {
     ...body,

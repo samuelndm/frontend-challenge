@@ -15,7 +15,7 @@ const PlaceCreate = () => {
 
   return (
     <Container>
-      <PlaceForm submit={handleSubmit} />
+      <PlaceForm title="Crie um novo lugar" submit={handleSubmit} />
     </Container>
   );
 };

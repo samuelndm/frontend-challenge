@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { Container, Form, Label, Input, Button } from "./styled";
 import { pascalToSnakeCase } from "../../utils/utils";
 import Place from "../Place";
+import { Container, Form, Title, Label, Input, Button } from "./styled";
 
-const PlaceForm = ({ place, submit = () => {} }) => {
+const PlaceForm = ({ place, title, submit }) => {
   const history = useHistory();
   const [name, setName] = useState("");
   const [slug, setSlug] = useState("");
@@ -53,6 +53,7 @@ const PlaceForm = ({ place, submit = () => {} }) => {
     <Container>
       <Place place={placeBody} hideOptions={true} />
       <Form onSubmit={(e) => handleSubmit(e)}>
+        <Title>{title}</Title>
         <Label htmlFor={"name"}>Nome</Label>
         <Input
           name="name"

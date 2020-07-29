@@ -1,27 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "./styled";
-import { fetchPlaces } from "../../services/places";
 import Place from "../Place";
 
-const Places = () => {
-  const [places, setPlaces] = useState([]);
+const Places = ({ places }) => {
+  const [placesList, setPlacesList] = useState([]);
 
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const { data } = await fetchPlaces();
-        setPlaces(data.places || []);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    loadData();
-  }, []);
+    setPlacesList(places || []);
+  }, [places]);
 
   return (
     <Container>
-      {places.length
-        ? places.map((place) => (
+      {placesList.length
+        ? placesList.map((place) => (
             <Place place={place} key={`place-${place.id}`} />
           ))
         : null}

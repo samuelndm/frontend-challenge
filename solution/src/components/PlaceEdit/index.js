@@ -46,7 +46,7 @@ const PlaceEdit = ({ slug }) => {
 
   return (
     <Container>
-      <PlaceForm place={place} submit={handleSubmit} />
+      <PlaceForm place={place} title="Editar" submit={handleSubmit} />
     </Container>
   );
 };

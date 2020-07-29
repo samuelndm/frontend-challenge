@@ -20,6 +20,12 @@ export const Form = styled.form`
   justify-content: center;
 `;
 
+export const Title = styled.h1`
+  margin: 0 0 30px 0;
+  font-size: 36px;
+  text-align: center;
+`;
+
 export const Label = styled.label`
   width: 100%;
   display: flex;
