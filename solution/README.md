@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### `yarn`
 
-Will install all dependencies needed to run the project
+Install all dependencies needed to run the project
 
 ### `yarn start`
 
